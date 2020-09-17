@@ -121,7 +121,8 @@ img.logo {
     background-color: rgb(255, 255, 255);
     padding-left: 100px;
     position: sticky;
-    top: 0;	
+    top: 0;
+	z-index: 20;
    
 }
 
@@ -173,7 +174,7 @@ color:#d8070e;
     transition: .9s;
     transform: scaleY(0);
     transform-origin: top center;
-    z-index: 5;
+    z-index: 10;
     
 }
 
@@ -277,7 +278,7 @@ color:#d8070e;
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
-    z-index: 777;	
+    z-index: 5;	
 }
 
 /* ========= End Accademy Sub Nav ========*/
@@ -288,7 +289,8 @@ color:#d8070e;
     background: url(https://www.sust.edu/uploads/banner-images/home-1581571418.jpg) top center no-repeat;
     background-size: cover;
     padding: 250px 0;
-    margin: 0; 
+    margin: 0;
+	z-index: -5;
 }
 
 .banner-article{
@@ -296,7 +298,7 @@ color:#d8070e;
     top: 160px;
     right: 450px;
     text-align: center;
-    z-index: -555;
+    z-index: 0;
 }
 
 /* ========Start About Part======== */
