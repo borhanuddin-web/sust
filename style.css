@@ -1,3 +1,8 @@
+html{
+   scroll-behavior: smooth;
+}
+
+	
 *{
     margin: 0;
     padding: 0;
@@ -271,6 +276,7 @@ color:#d8070e;
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
+    z-index:777;	
 }
 
 /* ========= End Accademy Sub Nav ========*/
