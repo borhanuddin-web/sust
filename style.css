@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear-fix::after{
+content: "";
+display: block;
+clear: both;
+}
+
+.fixed-width {
+    width: 1270px;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+
+
+.top-header{
+    background: #004890;
+}
+
+ .t-header-left {
+    width: 65%;
+    float: left;
+    
+} 
+
+.t-header-left h1 {
+    display: inline-block;
+    margin-left: 24%;
+    font-size: 25px;
+    font-weight: normal;
+    color: #fff;
+    padding: 20px;
+    /* line-height: 50px; */
+}
+
+img.logo {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 100px;
+    background: rgb(255, 255, 255);
+    padding: 9.5px;
+}
+
+.t-header-right{
+    width: 35%;
+    float: right;
+}
+
+
+.t-header-right ul li{
+    display: inline-block;
+    list-style: none;
+    
+    position: relative;
+
+}
+.t-header-right ul li a{
+    display: inline-block;
+    line-height: 50px;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    background: #004890; 
+    transition: 1s; 
+}
+
+.t-header-right ul li:hover > a{
+    background: #002b57;
+}
+
+.t-header-right ul li ul{
+    position: absolute;
+    top:100%;
+    left: 0px;
+    z-index: 999;
+    width: 92px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: top center;
+
+}
+.t-header-right ul li ul li{
+    display: block;
+}
+.t-header-right ul li ul li a{
+    display: block;
+    text-decoration: none;
+}
+
+.t-header-right ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* ====== start Main Header ======*/
+
+.main-header{
+    background-color: rgb(255, 255, 255);
+    padding-left: 100px;
+   
+}
+
+.main-header ul{
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+.main-header ul li{
+    display: inline-block;
+    position: relative;
+
+}
+.main-header ul li a{
+    display: inline-block;
+    padding: 20px 20px 15px 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-right: 1px solid rgb(255, 0, 0);
+    border-bottom: 3px solid transparent;
+    transition: .5s;
+    
+}
+
+.main-header ul li.active > a{
+    border-color: #d8070e;
+}
+
+.main-header ul li:last-child a{
+    border-right: none;
+}
+.main-header ul li:hover > a{
+color:#d8070e;
+}
+
+/* ========= Start Accademy Sub Nav ========*/
+
+.main-header ul li .sub-nab{
+    position: absolute;
+    width: 800px;
+    height: 250px;
+    background: rgb(241, 236, 236);
+    /* border: 1px solid rgba(0, 0, 0, 0.2); */
+    top: 100%;
+    left: 0;
+    margin-left: -5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .9s;
+    transform: scaleY(0);
+    transform-origin: top center;
+    z-index: 5;
+    
+}
+
+.main-header ul li .sub-nab-1{
+    width: 200px;
+    float: left;
+    
+}
+.main-header ul li .sub-nab-1 ul{
+    list-style: none;
+    /* max-width: 300px; */
+    text-align: left;
+    border-right: 1px solid rgb(168, 162, 162);
+    padding-bottom: 65px;
+}
+.main-header ul li .sub-nab-1 ul li{
+    /* display: inline-block; */
+    min-width: 200px;
+}
+.main-header ul li .sub-nab-1 ul li a{
+    display: block;
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    line-height: 1px;
+    font-size: 15px;
+    font-weight: 100;
+    transition: .5s;
+}
+.main-header ul li .sub-nab .sub-nab-1 ul li a:hover{
+    color: red;
+}
+
+.main-header ul li .sub-nab .sub-nab-2{
+    width: 300px;
+    /* display: inline-block; */
+    float: left;
+    
+}
+.main-header ul li .sub-nab .sub-nab-2 ul{
+    list-style: none;
+    /* max-width: 300px; */
+    height: auto;
+    text-align: left;
+    border-right: 1px solid rgb(168, 162, 162);
+}
+.main-header ul li .sub-nab .sub-nab-2 ul li{
+    /* display: inline-block; */
+    min-width: 300px;
+
+}
+.main-header ul li .sub-nab .sub-nab-2 ul li a{
+    display: block;
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    line-height: normal;
+    font-size: 15px;
+    font-weight: 100;
+    transition: .5s;
+}
+.main-header ul li .sub-nab-2 ul li a:hover{
+    color: red;
+}
+
+.main-header ul li .sub-nab .sub-nab-3{
+    width: 300px;
+    /* display: inline-block; */
+    float: right;
+    
+}
+.main-header ul li .sub-nab .sub-nab-3 ul{
+    list-style: none;
+    /* max-width: 300px; */
+    height: auto;
+    text-align: left;
+}
+.main-header ul li .sub-nab .sub-nab-3 ul li{
+    /* display: inline-block; */
+    min-width: 200px;
+
+}
+.main-header ul li .sub-nab .sub-nab-3 ul li a{
+    display: block;
+    text-decoration: none;
+    border: none;
+    color: rgb(0, 0, 0);
+    line-height: 1px;
+    font-size: 15px;
+    font-weight: 100;
+    transition: .5s;
+}
+
+.main-header ul li .sub-nab .sub-nab-3 ul li a:hover{
+    color: red;
+}
+
+
+
+.main-header ul li:hover .sub-nab{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* ========= End Accademy Sub Nav ========*/
+
+/* ========= Start Bannaer Part =============*/
+
+.banner{
+    background: url(https://www.sust.edu/uploads/banner-images/home-1581571418.jpg) top center no-repeat;
+    background-size: cover;
+    padding: 250px 0;
+    margin: 0; 
+}
+
+.banner-article{
+    position: absolute;
+    top: 160px;
+    right: 450px;
+    text-align: center;
+}
+
+/* ========Start About Part======== */
+.about-us{
+    
+    background: rgb(241, 241, 241);
+    padding: 50px;
+}
+.about-us h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+.about-us p{
+    font-size: 15px;
+    font-weight: 600;
+    max-width: 780px;
+    margin: auto;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.about-us span{
+    margin-top: 30px;
+    padding: 20px 30px;
+    background: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.about-us span a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.about-us span:hover{
+    background: rgb(73, 72, 72);
+    box-shadow: 2px 2px 20px rgba(71, 70, 70, 1);
+}
+
+/* ========End About Part======== */
+
+/* ========Start Activity Part======== */
+
+.activity{
+    background: #f9f9f9;
+    padding: 100px 35px;
+}
+
+.activity-item{
+    width: 30%;
+    height: 470px;
+	float: left;
+    border: 1px solid rgba(221, 221, 221, 1);
+    box-shadow: 2px 2px 20px rgba(71, 70, 70, 0.2);
+	padding: 25px 10px;
+	box-sizing: border-box;
+	margin-left: 1.5%;
+    margin-right: 1.5%;
+    border-radius: 15px;
+    
+}
+
+.activity-item span{
+    display: block;
+    height: 80px;
+    width: 80px;
+    background: rgb(0, 37, 204);
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+    line-height: 80px;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.activity-item h3{
+    margin: 20px 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.activity-item p{
+    max-width: 340px;
+    text-align: justify;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+
+.activity .activity-item:hover span{
+    background: #ffffff;
+    color: rgb(0, 37, 204);
+    border: 1px solid red;
+    cursor: pointer;
+    
+}
+
+
+/* =========Blog Side Start========== */
+
+.blog-container{
+    padding: 60px 0;
+}
+
+.blog-side{
+    float: left;
+    width: 68%;
+    background: url(https://www.sust.edu/uploads/gallery/p-main-1469926793.jpg) bottom center no-repeat fixed;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.notice-side{
+    float: right;
+    width: 27%;
+}
+.blog-item{
+    margin: 10px 10px 40px 10px;
+   
+}
+
+.blog-item h1{
+    padding-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.blog-item img{
+    width: 300px;
+    float: left;
+    height: auto;
+    margin-right: 35px;
+    box-shadow: 5px 5px 12px rgba(43, 41, 41, 0.8);
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.blog-item img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.blog-item p{
+    font-size: 18px;
+    line-height: 35px;
+    text-align: justify;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+}
+.notice-side h1{
+    padding-bottom: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.notice-item{
+    margin: 10px 10px 30px 10px;
+    background: rgba(0, 128, 255, 0.6);
+    width: 320px;
+    padding: 20px 0 20px 20px;
+    border-radius: 10px;
+   
+}
+
+
+.notice-item span{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.notice-item ul{
+    list-style: none;
+    margin-top: 10px;
+   
+}
+.notice-item ul li{
+    margin-bottom: 20px;
+}
+.notice-item ul li i{
+   margin-right: 10px;
+   font-size: 18px;
+}
+
+.notice-item ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.notice-item ul li span{
+    font-size: 10px;
+    font-weight: bold;
+    word-spacing: -1px;
+
+}
+
+/* =========Blog Side End========== */
+
+/* =========Footer Side Start======== */
+
+
+.footer{
+    background: rgb(0, 17, 94);
+    color: #fff;
+    padding: 15px 0;
+}
+.footer-left{
+    float: left;
+    width: 40%;
+}
+.footer-right{
+    float: right;
+    width: 60%;
+}
+
+.social-menu{
+    text-align: right;
+    
+}
+.social-menu li{
+    display: inline-block;
+    
+}
+.social-menu li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.social-menu li a:hover .fa-facebook{
+    color: rgb(0, 87, 250);
+}
+
+.social-menu li a:hover .fa-twitter{
+    color: #1DA1F2;
+}
+.social-menu li a:hover .fa-instagram{
+    color: #6A6768;
+}
+.social-menu li a:hover .fa-youtube{
+    color: #FF0000;
+}
+
