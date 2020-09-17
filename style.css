@@ -58,6 +58,7 @@ img.logo {
     width: 100px;
     background: rgb(255, 255, 255);
     padding: 9.5px;
+    z-index: 999;
 }
 
 .t-header-right{
@@ -276,7 +277,7 @@ color:#d8070e;
     opacity: 1;
     visibility: visible;
     transform: scaleY(1);
-    z-index:777;	
+    z-index: 777;	
 }
 
 /* ========= End Accademy Sub Nav ========*/
@@ -295,7 +296,7 @@ color:#d8070e;
     top: 160px;
     right: 450px;
     text-align: center;
-    z-index: -5;
+    z-index: -555;
 }
 
 /* ========Start About Part======== */
