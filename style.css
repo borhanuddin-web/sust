@@ -114,7 +114,7 @@ img.logo {
 .main-header{
     background-color: rgb(255, 255, 255);
     padding-left: 100px;
-    position: stiky;
+    position: sticky;
     top: 0;	
    
 }
